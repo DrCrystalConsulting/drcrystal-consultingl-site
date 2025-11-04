@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Crystal Financial Consulting</title>
-  <meta name="description" content="Better credit. Smarter funding. Real results. Strategy calls, credit audits, disputes, and business credit builder." />
-  <!-- Tailwind via CDN -->
+  <title>Dr.Crystal Consulting LLC</title>
+  <meta name="description" content="Credit, funding, business credit, webinar and mompreneur coaching with Dr.Crystal Consulting LLC." />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{
-      --brand-primary:#0B3D91; /* Royal Blue */
-      --brand-accent:#F59E0B;  /* Amber */
-      --brand-silver:#C0C0C0;  /* Silver */
+      --brand-primary:#0B3D91;
+      --brand-accent:#F97316;
     }
-    .brand-btn{ background: var(--brand-primary); }
-    .brand-text{ color: var(--brand-primary); }
-    .silver-text{ color: var(--brand-silver); }
-    .shadow-soft{ box-shadow: 0 10px 25px rgba(2,8,23,.08); }
     html{ scroll-behavior:smooth; }
+    .brand-btn{ background:var(--brand-primary); }
   </style>
 </head>
 <body class="bg-white text-slate-800">
+
+  <!-- Webinar announcement with countdown -->
+  <div class="w-full bg-[var(--brand-primary)] text-white text-sm text-center py-2 flex flex-col md:flex-row items-center justify-center gap-2">
+    <div>💎 <strong>Financial Freedom Wednesdays</strong> with Dr. Crystal — Every Wednesday at 5:30 PM (Arizona Time).</div>
+    <div id="countdown" class="px-3 py-1 rounded-full bg-white/10 text-xs"></div>
+    <a href="mailto:luvn2bmommy@gmail.com" class="underline text-xs md:text-sm">Email us to get your webinar link</a>
+  </div>
+
   <!-- Top bar -->
   <div class="w-full bg-slate-100 text-xs sm:text-sm">
     <div class="mx-auto max-w-7xl flex items-center justify-between px-4 py-2">
       <div class="flex items-center gap-4">
-        <span class="flex items-center gap-1">📞 <a href="tel:+1-602-748-3002" class="hover:underline">(602)-748-3002</a></span>
-        <span class="hidden sm:flex items-center gap-1">✉️ <a href="mailto:luvn2bmommy@gmail.com" class="hover:underline">hello@drcrystalfinance.com</a></span>
+        <span class="flex items-center gap-1">📞 <a href="tel:+16027483002" class="hover:underline">(602) 748-3002</a></span>
+        <span class="hidden sm:flex items-center gap-1">✉️ <a href="mailto:luvn2bmommy@gmail.com" class="hover:underline">luvn2bmommy@gmail.com</a></span>
       </div>
-      <a href="https://calendly.com/" class="inline-flex items-center gap-2 font-medium">📅 Book a call</a>
+      <span class="italic text-slate-500">Calendar link coming soon</span>
     </div>
   </div>
 
@@ -36,263 +39,88 @@
   <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
     <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="h-9 w-9 rounded-xl" style="background:var(--brand-primary)"></div>
-        <span class="font-bold tracking-wide brand-text">Dr. Crystal Financial Consulting</span>
+        <img src="assets/logo-drcrystal.jpg" alt="Dr.Crystal Consulting LLC" class="h-10 w-auto rounded-md bg-white object-contain" />
+        <span class="font-bold tracking-wide text-slate-900">Dr.Crystal Consulting LLC</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#about" class="text-slate-600 hover:text-slate-900">About</a>
         <a href="#services" class="text-slate-600 hover:text-slate-900">Services</a>
-        <a href="#process" class="text-slate-600 hover:text-slate-900">Process</a>
-        <a href="#testimonials" class="text-slate-600 hover:text-slate-900">Testimonials</a>
-        <a href="#faq" class="text-slate-600 hover:text-slate-900">FAQ</a>
+        <a href="#webinar" class="text-slate-600 hover:text-slate-900">Webinar</a>
         <a href="#contact" class="text-slate-600 hover:text-slate-900">Contact</a>
-        <a href="https://calendly.com/" class="rounded-2xl px-4 py-2 font-semibold text-white brand-btn">Book Appointment</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="mx-auto max-w-7xl grid md:grid-cols-2 gap-8 items-center px-4 py-16 sm:py-20">
+  <section class="relative overflow-hidden bg-slate-50">
+    <div class="mx-auto max-w-7xl grid md:grid-cols-2 gap-10 items-center px-4 py-16 sm:py-20">
       <div>
-        <p class="uppercase tracking-widest text-xs font-semibold text-slate-500">Empowering Your Financial Future</p>
-        <h1 class="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight">
-          <span class="brand-text">Better Credit. Smarter Funding.</span> <span class="text-slate-900">Real Results.</span>
+        <p class="uppercase tracking-widest text-xs font-semibold text-slate-500">Credit • Funding • Mompreneur</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
+          Work with <span class="text-[var(--brand-primary)]">Dr. Crystal</span> to grow and protect your money.
         </h1>
         <p class="mt-4 text-lg text-slate-600 max-w-xl">
-          We help consumers and small businesses improve credit, access funding, and build business credit the right way—without the guesswork.
+          From credit repair to business funding to weekly financial webinars — everything in one place under Dr.Crystal Consulting LLC.
         </p>
         <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <a href="https://calendly.com/" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold text-white brand-btn">
-            Schedule Strategy Session ➜
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold text-white brand-btn">
+            Call / Message (602) 748-3002
           </a>
-          <a href="#services" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-slate-300">
-            Explore Services
+          <a href="#webinar" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-slate-200 bg-white">
+            Join Wednesday Webinar
           </a>
-        </div>
-        <div class="mt-6 flex items-center gap-6 text-sm text-slate-600">
-          <span class="flex items-center gap-1">🛡️ Secure & confidential</span>
-          <span class="flex items-center gap-1">✅ BBB‑style standards</span>
         </div>
       </div>
       <div class="relative">
-        <div class="aspect-[4/3] w-full rounded-3xl bg-gradient-to-br from-slate-200 to-slate-100 shadow-xl flex items-center justify-center">
-          <span class="text-slate-500">Hero Image / Video</span>
-        </div>
-        <div class="absolute -bottom-6 -left-6 rounded-2xl bg-white shadow-soft p-4 w-[80%]">
-          <p class="text-sm font-semibold brand-text">Credit Progress</p>
-          <div class="mt-2 h-2 bg-slate-200 rounded-full overflow-hidden">
-            <div class="h-full" style="width:78%; background:var(--brand-primary)"></div>
-          </div>
-          <p class="mt-2 text-xs text-slate-600">Clients seeing positive movement within 90 days.</p>
+        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
+          <img src="assets/drcrystal-headshot.jpg" alt="Dr. Crystal" class="w-full h-full object-cover" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 py-16 grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl font-bold brand-text">Our Mission</h2>
-        <p class="mt-4 text-slate-700">
-          Financial freedom starts with education and a hands‑on plan. Dr. Crystal and team provide step‑by‑step guidance so you can remove errors, build credit properly, and qualify for the right funding at the right time.
-        </p>
-        <ul class="mt-6 space-y-2">
-          <li class="flex items-center gap-2">✔️ Trusted</li>
-          <li class="flex items-center gap-2">✔️ Detail‑oriented</li>
-          <li class="flex items-center gap-2">✔️ Professional</li>
-        </ul>
-      </div>
-      <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-xl font-semibold">Free Strategy Session</h3>
-        <p class="mt-2 text-sm text-slate-600">Tell us where you are today and where you want to be in 3–6 months. We’ll map the fastest path.</p>
-        <form class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3" onsubmit="return false;">
-          <input class="rounded-xl border border-slate-300 px-4 py-2" placeholder="Full name"/>
-          <input class="rounded-xl border border-slate-300 px-4 py-2" placeholder="Phone"/>
-          <input class="rounded-xl border border-slate-300 px-4 py-2 sm:col-span-2" placeholder="Email"/>
-          <a href="https://calendly.com/" class="rounded-xl px-4 py-2 font-semibold text-white sm:col-span-2 text-center brand-btn">Get Started</a>
-          <p class="text-xs text-slate-500 sm:col-span-2">By clicking, you agree to be contacted about your inquiry. No spam.</p>
-        </form>
+  <!-- Webinar Section -->
+  <section id="webinar" class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 text-center">
+      <h2 class="text-3xl font-bold text-slate-900">Financial Freedom Wednesdays</h2>
+      <p class="mt-3 text-slate-700">Every Wednesday • 5:30 PM Arizona time (AZ)</p>
+      <p class="mt-2 text-sm text-slate-500">Email or text us to get the link for this week’s live session.</p>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="mailto:luvn2bmommy@gmail.com?subject=Webinar%20Registration" class="px-6 py-3 rounded-xl text-white font-semibold bg-[var(--brand-primary)]">Register by Email</a>
+        <a href="tel:+16027483002" class="px-6 py-3 rounded-xl border border-slate-300 text-slate-800 font-semibold">Text/Call (602) 748-3002</a>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services">
+  <section id="services" class="bg-white">
     <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-3xl font-bold brand-text">Services</h2>
-      <p class="mt-2 text-slate-600">Pick what you need now—add more as you grow.</p>
-      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Card 1 -->
-        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold group-hover:underline brand-text">Credit Audit & Disputes</h3>
-          <p class="mt-1 text-sm text-slate-600">Done‑for‑you credit repair with monthly updates</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Deep credit audit & plan</li>
-            <li>✔️ Automated dispute letters</li>
-            <li>✔️ Score tracking dashboard</li>
-          </ul>
-          <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold brand-text">Talk to us ➜</a>
+      <h2 class="text-3xl font-bold text-slate-900">Services</h2>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Credit Match Program</h3>
+          <p class="mt-2 text-sm text-slate-600">Personalized dispute strategy and restoration to rebuild your score fast.</p>
         </div>
-        <!-- Card 2 -->
-        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold group-hover:underline brand-text">Funding & Lines of Credit</h3>
-          <p class="mt-1 text-sm text-slate-600">Personal & business funding options</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Pre‑qualification check</li>
-            <li>✔️ Best‑fit lenders</li>
-            <li>✔️ Application support</li>
-          </ul>
-          <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold brand-text">Talk to us ➜</a>
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Funding Accelerator</h3>
+          <p class="mt-2 text-sm text-slate-600">Business and personal funding programs to get you capital-ready.</p>
         </div>
-        <!-- Card 3 -->
-        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold group-hover:underline brand-text">Business Credit Builder</h3>
-          <p class="mt-1 text-sm text-slate-600">Separate business credit & unlock $50k+</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Trade lines setup</li>
-            <li>✔️ Navigation of tiers</li>
-            <li>✔️ Vendor mapping</li>
-          </ul>
-          <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold brand-text">Talk to us ➜</a>
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Business Credit Builder</h3>
+          <p class="mt-2 text-sm text-slate-600">Separate and strengthen your business credit profile.</p>
         </div>
-        <!-- Card 4 -->
-        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold group-hover:underline brand-text">Tax & Compliance</h3>
-          <p class="mt-1 text-sm text-slate-600">Solo, 1099, LLC: clean and compliant</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Tax prep guidance</li>
-            <li>✔️ Quarterly planning</li>
-            <li>✔️ LLC/EIN basics</li>
-          </ul>
-          <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold brand-text">Talk to us ➜</a>
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Mompreneur Mentorship</h3>
+          <p class="mt-2 text-sm text-slate-600">Coaching for women balancing family, finances, and business growth.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process" class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-3xl font-bold brand-text">How It Works</h2>
-      <div class="mt-8 grid md:grid-cols-4 gap-6">
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--brand-primary)">1</div>
-          <h3 class="mt-4 text-lg font-semibold">Strategy Call</h3>
-          <p class="mt-2 text-sm text-slate-600">We map your goals, timelines, and starting point.</p>
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Speaking & Collaborations</h3>
+          <p class="mt-2 text-sm text-slate-600">Invite Dr. Crystal to speak or partner with your group.</p>
         </div>
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--brand-primary)">2</div>
-          <h3 class="mt-4 text-lg font-semibold">Action Plan</h3>
-          <p class="mt-2 text-sm text-slate-600">A milestone‑based plan for credit, funding, or both.</p>
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Custom Financial Strategy Session</h3>
+          <p class="mt-2 text-sm text-slate-600">Not sure yet? Tell us your situation and we’ll map a plan.</p>
         </div>
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--brand-primary)">3</div>
-          <h3 class="mt-4 text-lg font-semibold">Execution</h3>
-          <p class="mt-2 text-sm text-slate-600">We send letters, apply with lenders, and report progress.</p>
-        </div>
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--brand-primary)">4</div>
-          <h3 class="mt-4 text-lg font-semibold">Growth</h3>
-          <p class="mt-2 text-sm text-slate-600">Better scores, access to capital, stronger cashflow.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section>
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-3xl font-bold brand-text">Simple Plans</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <!-- Starter -->
-        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm">
-          <div class="flex items-baseline justify-between">
-            <h3 class="text-xl font-semibold">Starter</h3>
-            <span class="text-2xl font-extrabold brand-text">$99/mo</span>
-          </div>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Personalized credit roadmap</li>
-            <li>✔️ Up to 3 items disputed/mo</li>
-            <li>✔️ Monthly progress review</li>
-            <li>✔️ Email support</li>
-          </ul>
-          <a href="https://calendly.com/" class="mt-6 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold text-white w-full brand-btn">Get Started</a>
-        </div>
-        <!-- Pro -->
-        <div class="rounded-3xl border-2 p-6 shadow-sm" style="border-color:var(--brand-primary)">
-          <div class="flex items-baseline justify-between">
-            <h3 class="text-xl font-semibold">Pro</h3>
-            <span class="text-2xl font-extrabold brand-text">$179/mo</span>
-          </div>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Everything in Starter</li>
-            <li>✔️ Aggressive disputes (6+/mo)</li>
-            <li>✔️ Funding pre‑qualification</li>
-            <li>✔️ Priority support</li>
-          </ul>
-          <a href="https://calendly.com/" class="mt-6 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold text-white w-full brand-btn">Get Started</a>
-        </div>
-        <!-- Business -->
-        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm">
-          <div class="flex items-baseline justify-between">
-            <h3 class="text-xl font-semibold">Business</h3>
-            <span class="text-2xl font-extrabold brand-text">Custom</span>
-          </div>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li>✔️ Business credit builder</li>
-            <li>✔️ Funding roadmap</li>
-            <li>✔️ Entity & compliance review</li>
-            <li>✔️ Hands‑on implementation</li>
-          </ul>
-          <a href="https://calendly.com/" class="mt-6 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold text-white w-full brand-btn">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-3xl font-bold brand-text">What Clients Say</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="flex gap-1 text-amber-500">★★★★★</div>
-          <p class="mt-3 text-sm text-slate-700">“Professional, transparent, and effective. I felt guided every step of the way.”</p>
-          <p class="mt-3 text-sm font-semibold">Happy Client</p>
-        </div>
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="flex gap-1 text-amber-500">★★★★★</div>
-          <p class="mt-3 text-sm text-slate-700">“The funding plan was clear and we hit our target within 60 days.”</p>
-          <p class="mt-3 text-sm font-semibold">Small Biz Owner</p>
-        </div>
-        <div class="rounded-3xl bg-white p-6 border border-slate-200">
-          <div class="flex gap-1 text-amber-500">★★★★★</div>
-          <p class="mt-3 text-sm text-slate-700">“Highly recommended—responsive team and real results.”</p>
-          <p class="mt-3 text-sm font-semibold">Agency Partner</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-3xl font-bold brand-text">FAQs</h2>
-      <div class="mt-6 divide-y rounded-3xl border border-slate-200 bg-white">
-        <details class="p-6 border-b">
-          <summary class="cursor-pointer font-semibold">How soon can I see results?</summary>
-          <p class="mt-2 text-sm text-slate-600">Many clients start seeing movement within 30–90 days depending on the case and reporting cycles.</p>
-        </details>
-        <details class="p-6 border-b">
-          <summary class="cursor-pointer font-semibold">Is there a guarantee?</summary>
-          <p class="mt-2 text-sm text-slate-600">We can’t promise outcomes, but we provide transparent updates and a clear plan every month.</p>
-        </details>
-        <details class="p-6">
-          <summary class="cursor-pointer font-semibold">Do you help with business credit?</summary>
-          <p class="mt-2 text-sm text-slate-600">Yes. We build business credit separate from personal to unlock higher limits and better terms.</p>
-        </details>
       </div>
     </div>
   </section>
@@ -302,59 +130,62 @@
     <div class="mx-auto max-w-7xl px-4 py-16 grid md:grid-cols-2 gap-10">
       <div>
         <h2 class="text-3xl font-bold">Contact</h2>
-        <p class="mt-2 text-slate-300">Prefer a quick email? We reply within 1 business day.</p>
-        <div class="mt-6 space-y-2 text-slate-200">
-          <p>📞 (000) 000‑0000</p>
-          <p>✉️ hello@drcrystalfinance.com</p>
-          <p>🗓 Mon–Fri • 9:00–5:30</p>
-        </div>
-        <a href="https://calendly.com/" class="mt-6 inline-flex items-center gap-2 rounded-xl px-5 py-3 font-semibold text-slate-900 bg-white">
-          Book a Strategy Session
-        </a>
+        <p class="mt-2 text-slate-200">Send your name and what service you want. We reply within 1 business day.</p>
+        <p class="mt-4 flex gap-2 items-center">📞 (602) 748-3002</p>
+        <p class="mt-2 flex gap-2 items-center">✉️ luvn2bmommy@gmail.com</p>
       </div>
       <div class="rounded-3xl bg-white p-6 text-slate-800">
-        <form class="grid grid-cols-1 sm:grid-cols-2 gap-3" onsubmit="return false;">
-          <input class="rounded-xl border border-slate-300 px-4 py-2" placeholder="Full name"/>
-          <input class="rounded-xl border border-slate-300 px-4 py-2" placeholder="Phone"/>
-          <input class="rounded-xl border border-slate-300 px-4 py-2 sm:col-span-2" placeholder="Email"/>
-          <textarea class="rounded-xl border border-slate-300 px-4 py-2 sm:col-span-2" rows="4" placeholder="Tell us about your goals"></textarea>
-          <a href="mailto:hello@drcrystalfinance.com?subject=Inquiry%20from%20website" class="rounded-xl px-4 py-2 font-semibold text-white sm:col-span-2 text-center brand-btn">Send Inquiry</a>
+        <form class="space-y-3" onsubmit="return false;">
+          <input class="w-full rounded-xl border border-slate-200 px-4 py-2" placeholder="Full name" />
+          <input class="w-full rounded-xl border border-slate-200 px-4 py-2" placeholder="Email or Phone" />
+          <textarea class="w-full rounded-xl border border-slate-200 px-4 py-2" rows="4" placeholder="Tell us what you need (credit, funding, coaching, webinar...)"></textarea>
+          <a href="mailto:luvn2bmommy@gmail.com?subject=Website%20Inquiry" class="inline-block w-full text-center rounded-xl bg-[var(--brand-primary)] px-4 py-2 font-semibold text-white">Send</a>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t">
-    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
-      <div>
-        <p class="font-bold brand-text">Dr. Crystal Financial Consulting</p>
-        <p class="mt-2 text-slate-600">Fintech solutions for consumers & small businesses.</p>
-      </div>
-      <div>
-        <p class="font-semibold">Quick Links</p>
-        <ul class="mt-2 space-y-2">
-          <li><a href="#about" class="hover:underline">About</a></li>
-          <li><a href="#services" class="hover:underline">Services</a></li>
-          <li><a href="#process" class="hover:underline">Process</a></li>
-          <li><a href="#faq" class="hover:underline">FAQs</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold">Follow</p>
-        <div class="mt-2 flex items-center gap-3">
-          <a href="#" class="underline">Facebook</a>
-          <a href="#" class="underline">Instagram</a>
-          <a href="#" class="underline">YouTube</a>
-        </div>
-        <p class="mt-4 text-slate-500">© <span id="year"></span> Dr. Crystal Financial Consulting. All rights reserved.</p>
-      </div>
+    <div class="mx-auto max-w-7xl px-4 py-10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm">
+      <p class="text-slate-600">© <span id="year"></span> Dr.Crystal Consulting LLC. All rights reserved.</p>
+      <p class="text-slate-400">Financial Freedom Wednesdays • 5:30 PM Arizona Time</p>
     </div>
   </footer>
 
   <script>
+    // set countdown to next Wednesday 17:30 local time
+    function getNextWednesday1730(){
+      const now = new Date();
+      const result = new Date(now);
+      const day = now.getDay(); // 0=Sun
+      let add = (3 - day); // Wednesday=3
+      if (add < 0) add += 7;
+      result.setDate(now.getDate() + add);
+      result.setHours(17,30,0,0);
+      // if today is Wednesday but time already passed, set to next week
+      if (result <= now){
+        result.setDate(result.getDate() + 7);
+      }
+      return result;
+    }
+    const countdownEl = document.getElementById('countdown');
+    const target = getNextWednesday1730();
+    function updateCountdown(){
+      const now = new Date();
+      const diff = target - now;
+      if (diff <= 0){
+        countdownEl.textContent = "Starts soon";
+        return;
+      }
+      const d = Math.floor(diff / (1000*60*60*24));
+      const h = Math.floor((diff / (1000*60*60)) % 24);
+      const m = Math.floor((diff / (1000*60)) % 60);
+      countdownEl.textContent = `Next live in ${d}d ${h}h ${m}m`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
